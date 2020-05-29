@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Практика_С3</title>
+	
+</head>
+<body>
+	<h1 style="color:orange; font-size: 30px">Карточка ввода данных</h1>
+<form name="test" method="post" action="">
+  <div id="input_city">
+  <p><b>Введите ваш город:</b><br>
+   <input id="city" type="text" size="30" style="border-radius: 5px; height: 20px; margin-top: 10px">
+  </p>
+  </div>
+  <p><input id="save" type="button" value="Сохранить" onclick="getInfo()"></p>
+  <!-- -------------------------------------------- -->
+  <div id="greeting" style="display: none;">
+  <p id="greeting_text" style="font-size: 25px; color: blue"></p>
+  <p><input id="clear" type="button" value="Очистить" onclick="clearCity()"></p>
+  </div>
+  <!-- ----------------------------------------------------- -->
+  
+  <p><b>Ваши предпочтения:</b><Br>
+   <input type="checkbox" name="prefer1" value="ie" style="margin-top: 10px" onclick="saveChk()"> не звонить мне<Br>
+   <input type="checkbox" name="prefer2" value="opera" onclick="saveChk()"> я прочитал и согласен с правилами пользования сервисом<Br>
+   <input type="checkbox" name="prefer3" value="firefox" onclick="saveChk()"> я не выбираю эту галочку<Br>
+   <input type="checkbox" name="prefer4" value="ie" onclick="saveChk()"> я подтверждаю, что свобода в интернете — это возможность выбирать галочки<Br>
+   <input type="checkbox" name="prefer5" value="opera" onclick="saveChk()"> мне больше 12 лет<Br>
+   <input type="checkbox" name="prefer6" value="firefox" onclick="saveChk()"> это задание выполнено правильно<Br>
+  </p>
+  <p><input id="freeze_chk" type="button" value="Зафиксировать" onclick="freeze_Chk()"></p>
+  
+</form>
+<script src="js/main.js"></script>
+</body>
+</html>
